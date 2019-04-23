@@ -1,0 +1,11 @@
+BOS i want to fly from boston at 838 am and arrive in denver at 1110 in the morning EOS	O O O O O O B-fromloc.city_name O B-depart_time.time I-depart_time.time O O O B-toloc.city_name O B-arrive_time.time O O B-arrive_time.period_of_day atis_flight
+BOS show me all round trip flights between houston and las vegas EOS	O O O O B-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name atis_flight
+BOS i would like some information on a flight from denver to san francisco on united airlines EOS	O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name atis_flight
+BOS what are the coach flights between dallas and baltimore leaving august tenth and returning august twelve EOS	O O O O B-class_type O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O O B-return_date.month_name B-return_date.day_number atis_flight
+BOS i'm flying from boston to the bay area EOS	O O O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name atis_flight
+BOS okay can you tell me the flight cost between denver and atlanta EOS	O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name atis_flight
+BOS from montreal to las vegas EOS	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name atis_flight
+BOS what is the earliest breakfast flight from philadelphia to fort worth EOS	O O O O B-flight_mod B-meal_description O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights from pittsburgh to baltimore between 10 am and 2 pm EOS	O O O B-fromloc.city_name O B-toloc.city_name O B-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time atis_flight
+BOS what is the latest flight departing from boston to san francisco EOS	O O O O B-flight_mod O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name atis_flight
+BOS flights from ontario to florida EOS	O O O B-fromloc.city_name O B-toloc.state_name atis_flight
